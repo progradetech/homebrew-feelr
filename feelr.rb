@@ -9,7 +9,7 @@ class Feelr < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/progradetech/feelr/releases/download/v1.3.1/feelr_1.3.1_darwin_amd64.tar.gz"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.3.1/feelr_1.3.1_darwin_amd64.tar.gz"
       sha256 "442b6eb38468021ca488f8e6c1802475c1952652d5109fd46ee3ab38f7c255df"
 
       def install
@@ -17,7 +17,7 @@ class Feelr < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/progradetech/feelr/releases/download/v1.3.1/feelr_1.3.1_darwin_arm64.tar.gz"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.3.1/feelr_1.3.1_darwin_arm64.tar.gz"
       sha256 "bcfa3c28d616bf9962f5a786dbbf4d9863d710932633cd6614e48597b6227dfb"
 
       def install
@@ -28,14 +28,14 @@ class Feelr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progradetech/feelr/releases/download/v1.3.1/feelr_1.3.1_linux_amd64.tar.gz"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.3.1/feelr_1.3.1_linux_amd64.tar.gz"
       sha256 "f863cfb12187f4a60f36359725c2943ed1083bf89c0596cfbbf73d5754fe47da"
       def install
         bin.install "feelr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progradetech/feelr/releases/download/v1.3.1/feelr_1.3.1_linux_arm64.tar.gz"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.3.1/feelr_1.3.1_linux_arm64.tar.gz"
       sha256 "aee765ff19df1782ef9885a188cdb3dfc104130f5c9a1c8d6dae454b8340ada8"
       def install
         bin.install "feelr"
