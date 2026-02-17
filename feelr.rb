@@ -5,20 +5,20 @@
 class Feelr < Formula
   desc "Agent-friendly API simplification layer CLI"
   homepage "https://feelr.dev"
-  version "1.3.2"
+  version "1.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.3.2/feelr_1.3.2_darwin_amd64.tar.gz"
-      sha256 "0ec81729f8ecc206b331f9a7020f56e9be99d5236ba8cff2ca049e89aaa3e6d9"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.4.0/feelr_1.4.0_darwin_amd64.tar.gz"
+      sha256 "8d9d07c5db4f0adf42f3394e6c3434552695212bff906fd96a43f2197f27ad36"
 
       def install
         bin.install "feelr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.3.2/feelr_1.3.2_darwin_arm64.tar.gz"
-      sha256 "bb2ababde44aaf8e20b213fbabce3bf5039e1fc0170c3c3aca998a7db788c9e3"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.4.0/feelr_1.4.0_darwin_arm64.tar.gz"
+      sha256 "583519b7f9617d84bf1e8fb81d3ea23a13532db27980dd4de059cb4821a54ce3"
 
       def install
         bin.install "feelr"
@@ -28,15 +28,15 @@ class Feelr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.3.2/feelr_1.3.2_linux_amd64.tar.gz"
-      sha256 "0f906476f5c496bb3009791212f944826463bbfa8f8d6b7c6e79a10015e38284"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.4.0/feelr_1.4.0_linux_amd64.tar.gz"
+      sha256 "d2a45760dbd67204aca1781a83f2915c77c57e2aa2b7900b53297acfa39ffe9a"
       def install
         bin.install "feelr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.3.2/feelr_1.3.2_linux_arm64.tar.gz"
-      sha256 "a3e44af7ce0a20b10eef283524fa3564dd0efca801c5530c721f0d6517714fbe"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.4.0/feelr_1.4.0_linux_arm64.tar.gz"
+      sha256 "94a6fea4caf4bc779ae3ab0225d81f487e98258b63121404e83ff1be67acf4ba"
       def install
         bin.install "feelr"
       end
