@@ -9,16 +9,16 @@ class Feelr < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/progradetech/feelr/releases/download/v1.5.1/feelr_1.5.1_darwin_amd64.tar.gz"
-      sha256 "503aca5200083ee9f585ed7975b2fdf0f4c0f20b0dee8001e5e24d9b44918579"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.5.1/feelr_1.5.1_darwin_amd64.tar.gz"
+      sha256 "bba408ba7bab9450b5d065580bd34be6ee5797556622c87ba4b75667cb74d87d"
 
       def install
         bin.install "feelr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/progradetech/feelr/releases/download/v1.5.1/feelr_1.5.1_darwin_arm64.tar.gz"
-      sha256 "0730ca6e7186ed17c2119e9c070d92b6c79fee03ef016ae161e757a0d863ffe6"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.5.1/feelr_1.5.1_darwin_arm64.tar.gz"
+      sha256 "a0127e17340ae0e978dacb5328c11e9ac812657f56d3b831f5f7d61b4d78ba97"
 
       def install
         bin.install "feelr"
@@ -28,15 +28,15 @@ class Feelr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progradetech/feelr/releases/download/v1.5.1/feelr_1.5.1_linux_amd64.tar.gz"
-      sha256 "4828bb0181073c252aa6e450ca5f0023310254716e32430846a2e254e5c0e8d0"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.5.1/feelr_1.5.1_linux_amd64.tar.gz"
+      sha256 "c2f26109f0c1da29b4051b9d896d3894598fcc9e9db49bd57e2c31625dc2f80e"
       def install
         bin.install "feelr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progradetech/feelr/releases/download/v1.5.1/feelr_1.5.1_linux_arm64.tar.gz"
-      sha256 "ae5d4adc19f03ddd592fe19a738f72e1ce3d78526ab1763fc9dc1364e0eb5274"
+      url "https://github.com/progradetech/homebrew-feelr/releases/download/v1.5.1/feelr_1.5.1_linux_arm64.tar.gz"
+      sha256 "6dd7568765e2116d4cad685143db4e506acf2027799cb59cb77a1f6da665cf1f"
       def install
         bin.install "feelr"
       end
