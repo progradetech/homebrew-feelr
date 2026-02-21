@@ -5,20 +5,20 @@
 class Feelr < Formula
   desc "Agent-friendly API simplification layer CLI"
   homepage "https://feelr.dev"
-  version "1.6.2"
+  version "1.6.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/progradetech/feelr/releases/download/v1.6.2/feelr_1.6.2_darwin_amd64.tar.gz"
-      sha256 "51dab4757b350ad21c038863c04dd542a3335483fdecac94530a1cbd64d4cf89"
+      url "https://github.com/progradetech/feelr/releases/download/v1.6.3/feelr_1.6.3_darwin_amd64.tar.gz"
+      sha256 "830ce08cdb9d2c57b2a30432e1d167cb5a8e11bf8e69f23ea61945ca41717f78"
 
       def install
         bin.install "feelr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/progradetech/feelr/releases/download/v1.6.2/feelr_1.6.2_darwin_arm64.tar.gz"
-      sha256 "134cfddbf436440890472c3c159cdc2ee70e6fbad035602fca4506d103fc8fcb"
+      url "https://github.com/progradetech/feelr/releases/download/v1.6.3/feelr_1.6.3_darwin_arm64.tar.gz"
+      sha256 "78a93f4f42b767971e3e81b35ea122908a00ec6e6152975825b9e8f63bd2d6e6"
 
       def install
         bin.install "feelr"
@@ -28,15 +28,15 @@ class Feelr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progradetech/feelr/releases/download/v1.6.2/feelr_1.6.2_linux_amd64.tar.gz"
-      sha256 "f5be2988c732027003c674b7cbafeb25a3e65479cc7cdac0fbd14d41122133c1"
+      url "https://github.com/progradetech/feelr/releases/download/v1.6.3/feelr_1.6.3_linux_amd64.tar.gz"
+      sha256 "c048a04749e8a628cca8a54b1fc3ea540c6da2553f139f0f4973f80a044edb56"
       def install
         bin.install "feelr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progradetech/feelr/releases/download/v1.6.2/feelr_1.6.2_linux_arm64.tar.gz"
-      sha256 "27ad49cd4f4add390f88273d33aec4d0a79c5f343f209f7b28842210b101fac6"
+      url "https://github.com/progradetech/feelr/releases/download/v1.6.3/feelr_1.6.3_linux_arm64.tar.gz"
+      sha256 "e1f448bb89452d3d4da4191306a0c516c0e76317f365adc6da5c991428fbfefa"
       def install
         bin.install "feelr"
       end
