@@ -5,20 +5,20 @@
 class Feelr < Formula
   desc "Agent-friendly API simplification layer CLI"
   homepage "https://feelr.dev"
-  version "1.8.8"
+  version "1.9.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/progradetech/feelr/releases/download/v1.8.8/feelr_1.8.8_darwin_amd64.tar.gz"
-      sha256 "88eafb6dc7ac872e59b39cad5f6d81265734493287f983180729cdae3053a2ff"
+      url "https://github.com/progradetech/feelr/releases/download/v1.9.0/feelr_1.9.0_darwin_amd64.tar.gz"
+      sha256 "5a33a6880d547a5610fd4b6a27ce6121bb76ade0edbdad7334dbdcf7cce39d7e"
 
       define_method(:install) do
         bin.install "feelr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/progradetech/feelr/releases/download/v1.8.8/feelr_1.8.8_darwin_arm64.tar.gz"
-      sha256 "892d14c2d42bfb363e4718fc333deb44b479906820d1ad17d9feee20535e1de2"
+      url "https://github.com/progradetech/feelr/releases/download/v1.9.0/feelr_1.9.0_darwin_arm64.tar.gz"
+      sha256 "106ceb43c87469deae43f29030e7137185a536b9490e4fc77b1b5769b8ed1076"
 
       define_method(:install) do
         bin.install "feelr"
@@ -28,15 +28,15 @@ class Feelr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progradetech/feelr/releases/download/v1.8.8/feelr_1.8.8_linux_amd64.tar.gz"
-      sha256 "3a8531100c5f32fa7fa3015b1fb5a8b0fc718b28b960df7fb0f150d2ce3a23b1"
+      url "https://github.com/progradetech/feelr/releases/download/v1.9.0/feelr_1.9.0_linux_amd64.tar.gz"
+      sha256 "a5df52921f4828337276223f416b1a59910c7d87e76617bd3122fafc32da0c42"
       define_method(:install) do
         bin.install "feelr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progradetech/feelr/releases/download/v1.8.8/feelr_1.8.8_linux_arm64.tar.gz"
-      sha256 "e31ffc5fc1b424f5d6b7bce9d4e04e82c4ba88a2c1a946126f523fbd5516d774"
+      url "https://github.com/progradetech/feelr/releases/download/v1.9.0/feelr_1.9.0_linux_arm64.tar.gz"
+      sha256 "9a9c0d5559deb1751dcd6475c6e3d88b5312f3ac6f5b3d98128ee0a0fff4d268"
       define_method(:install) do
         bin.install "feelr"
       end
